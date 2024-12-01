@@ -2,74 +2,60 @@
 
 ## Overview
 
-FITCORE is a Java-based Gym Management System designed to simplify gym operations by automating processes such as member registration, trainer assignment, and workout scheduling. It offers a user-friendly interface built using Java Swing and robust backend support with MySQL, ensuring efficiency and scalability.
+FITCORE is a comprehensive Java-based solution designed to streamline gym operations. This system handles processes such as member registration, trainer assignments, and workout schedule creation. With a user-friendly interface built using Java Swing and a robust MySQL backend, FITCORE ensures scalability and efficiency.
 
 ## Features
 
-- **User Login System**:
-  - Separate logins for Admins, Trainers, and Members.
+- **Role-Based Login System**:
+  - Dedicated login panels for Admins, Trainers, and Members.
 - **Member and Trainer Management**:
-  - Add, update, or delete member and trainer profiles, including personal information, fitness goals, and schedules.
-- **Workout Scheduling**:
-  - Customized workout plans for members with automated trainer allotment based on availability and fitness goals.
-- **Admin Dashboard**:
-  - Manage user profiles, schedules, and classes.
-  - Generate reports for gym activities.
-- **Trainer Dashboard**:
-  - View assigned members and schedules.
-- **Member Dashboard**:
-  - Update profiles, view workout plans, and track progress.
+  - Add, edit, or delete profiles with details like fitness goals, schedules, and personal information.
+- **Workout Plan Automation**:
+  - Generate tailored workout plans and assign trainers based on availability and goals.
+- **Dashboards**:
+  - **Admin**: Manage gym profiles, create schedules, and generate reports.
+  - **Trainer**: View assigned members and schedules.
+  - **Member**: Access workout plans and update personal information.
 
 ## Technology Stack
 
-- **Code Editor**: Visual Studio Code
-- **Frontend**: Java Swing, AWT
-- **Backend**: MySQL for database management
+- **IDE**: Visual Studio Code
+- **Frontend**: Java Swing and AWT
+- **Backend**: MySQL database
 - **Programming Language**: Java
 
 ## Project Structure
 
-The project is organized into the following folders:
-
-- `src`: Contains the source code for the application.
-  - `AdminDashboard.java`: Admin dashboard functionality.
-  - `TrainerDashboard.java`: Trainer-specific operations.
+- **`src` Folder**: Contains the source code for the application, organized into modular Java classes such as:
+  - `AdminDashboard.java`: Admin functionalities.
+  - `TrainerDashboard.java`: Trainer-related tasks.
   - `MemberDashboard.java`: Member-specific operations.
-  - Other utility classes and panels for the GUI.
-- `images`: Contains images used in the GUI, including interface designs like `ADMINLOGIN.png`, `MEMBERREGISTER.png`, and others.
-- `bin`: Contains compiled `.class` files.
+- **`images` Folder**: Stores GUI images, including login and dashboard designs.
+- **`bin` Folder**: Contains compiled `.class` files.
 
-> The project uses Visual Studio Code for development and follows a modular structure to separate concerns.
+The modular structure ensures clear separation of responsibilities and easy navigation within the project.
 
-## System Flow
+## System Workflow
 
-### Data Flow Diagram
+1. **User Input**: Users interact with login screens and dashboards.
+2. **Validation**: Input data is verified for accuracy.
+3. **Business Logic**: Handles scheduling, trainer allocation, and profile updates.
+4. **Database Operations**: Stores and retrieves data using MySQL.
+5. **Result Presentation**: Displays outcomes on tailored dashboards for each user role.
 
-1. **User Input**:
-   - Inputs include login credentials, registration details, and workout preferences.
-2. **Validation**:
-   - Input is validated to ensure accuracy and completeness.
-3. **Processing**:
-   - Business logic processes input for trainer allocation and schedule creation.
-4. **Database Interaction**:
-   - MySQL database stores and retrieves member and trainer data.
-5. **Result Display**:
-   - Results are displayed on intuitive dashboards for members, trainers, and admins.
+### Visual Representation
 
-### Block Diagram
-
-![Block Diagram](images/structure.png)  
-*Illustrates the flow of operations from user interaction to database management and result visualization.*
+![System Flow Diagram](images/structure.png)  
+*Depicts the flow of data from user input to result presentation.*
 
 ## Objectives
 
-- Simplify gym management through automation.
-- Provide a scalable, user-friendly system to improve operational efficiency.
-- Enable easy management of members, trainers, and workout schedules.
+- Automate routine gym tasks to enhance efficiency.
+- Offer a scalable and user-friendly system for gym management.
+- Simplify the management of members, trainers, and schedules.
 
 ## Installation and Usage
 
-1. Clone the repository to your local machine:
+1. Clone this repository:
    ```bash
    git clone https://github.com/Itz-Om17/GYM-Management-System.git
-
