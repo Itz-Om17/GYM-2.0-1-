@@ -45,7 +45,7 @@ The modular structure ensures clear separation of responsibilities and easy navi
 
 ### Visual Representation
 
-![System Flow Diagram](images/structure.png)  
+![System Flow Diagram](src/images/structure.png) 
 *Depicts the flow of data from user input to result presentation.*
 
 ## Objectives
