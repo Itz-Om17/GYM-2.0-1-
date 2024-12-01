@@ -60,7 +60,8 @@ class BackgroundPanel extends JPanel {
 
     public BackgroundPanel(String imagePath) {
         try {
-            backgroundImage = new ImageIcon(getClass().getResource("/memberloginpanel.png")).getImage();
+            backgroundImage = new ImageIcon("src/images/memberloginpanel.png").getImage();
+
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -81,7 +82,8 @@ class BackgroundPanel1 extends JPanel {
 
     public BackgroundPanel1(String imagePath) {
         try {
-            backgroundImage = new ImageIcon(getClass().getResource("/MEMBERREGISTER.png")).getImage();
+            backgroundImage = new ImageIcon("src/images/MEMBERREGISTER.png").getImage();
+
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -98,7 +100,7 @@ class BackgroundPanel1 extends JPanel {
     }
 }
 private JPanel createLoginPanel(MainInterface mainInterface) {
-    BackgroundPanel panel = new BackgroundPanel("C:\\Users\\OM\\OneDrive\\Desktop\\GYM 2.0(1)\\src\\memberloginpanel.png");
+    BackgroundPanel panel = new BackgroundPanel("src/images/memberloginpanel.png");
     panel.setLayout(new GridBagLayout());
     
     JPanel loginComponentsPanel = new JPanel(new GridBagLayout());
@@ -215,7 +217,7 @@ private JLabel infoLabel;
     private JComboBox<String> genderBox, goalBox, timingBox, inchesBox, membershipDropdown;
 
     public JPanel createRegistrationPanel() {
-         BackgroundPanel1 panel2 = new BackgroundPanel1("C:\\Users\\OM\\OneDrive\\Desktop\\GYM 2.0(1)\\src\\MEMBERREGISTER.png");
+        BackgroundPanel1 panel2 = new BackgroundPanel1("src/images/MEMBERREGISTER.png");
         panel2.setLayout(new GridBagLayout());
 
         GridBagConstraints gbc = new GridBagConstraints();

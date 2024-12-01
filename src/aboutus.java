@@ -171,16 +171,17 @@ public class aboutus extends JPanel {
 
     private void loadImagesAsync() {
         String[] imagePaths = {
-            "C:\\Users\\OM\\OneDrive\\Desktop\\Red Black Dynamic GYM Presentation\\1.png",
-            "C:\\Users\\OM\\OneDrive\\Desktop\\Red Black Dynamic GYM Presentation\\2.png",
-            "C:\\Users\\OM\\OneDrive\\Desktop\\Red Black Dynamic GYM Presentation\\3.png",
-            "C:\\Users\\OM\\OneDrive\\Desktop\\Red Black Dynamic GYM Presentation\\4.png",
-            "C:\\Users\\OM\\OneDrive\\Desktop\\Red Black Dynamic GYM Presentation\\5.png",
-            "C:\\Users\\OM\\OneDrive\\Desktop\\Red Black Dynamic GYM Presentation\\6.png",
-            "C:\\Users\\OM\\OneDrive\\Desktop\\Red Black Dynamic GYM Presentation\\7.png",
-            "C:\\Users\\OM\\OneDrive\\Desktop\\Red Black Dynamic GYM Presentation\\8.png",
-            "C:\\Users\\OM\\OneDrive\\Desktop\\Red Black Dynamic GYM Presentation\\9.png"
-        };
+    "src/images/1.png",
+    "src/images/2.png",
+    "src/images/3.png",
+    "src/images/4.png",
+    "src/images/5.png",
+    "src/images/6.png",
+    "src/images/7.png",
+    "src/images/8.png",
+    "src/images/9.png"
+};
+
 
         originalImages = new BufferedImage[imagePaths.length];
         scaledImages = new ImageIcon[imagePaths.length];

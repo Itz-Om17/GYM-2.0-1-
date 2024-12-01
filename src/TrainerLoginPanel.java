@@ -24,7 +24,7 @@ public class TrainerLoginPanel extends JPanel {
 
         public BackgroundPanel(String imagePath) {
             try {
-                backgroundImage = new ImageIcon(getClass().getResource("/TRAINERLOGIN.png")).getImage();
+                backgroundImage = new ImageIcon(getClass().getResource("/images/TRAINERLOGIN.png")).getImage();
             } catch (Exception e) {
                 e.printStackTrace();
             }
@@ -46,7 +46,7 @@ public class TrainerLoginPanel extends JPanel {
         this.cardPanel = cardPanel;
         this.frame = frame;
 
-        BackgroundPanel backgroundPanel = new BackgroundPanel("C:\\Users\\OM\\OneDrive\\Desktop\\GYM 2.0(1)\\src\\TRAINERLOGIN.png");
+        BackgroundPanel backgroundPanel = new BackgroundPanel(getClass().getResource("/images/TRAINERLOGIN.png").getPath());
         backgroundPanel.setLayout(new GridBagLayout()); 
         GridBagConstraints gbc = new GridBagConstraints();
         gbc.insets = new Insets(10, 10, 10, 10);

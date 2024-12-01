@@ -15,7 +15,7 @@ public class MainInterface {
     public MainInterface() {
         try {
             // Load the background image
-            bgImage = ImageIO.read(new File("C:\\Users\\OM\\OneDrive\\Desktop\\GYM 2.0(1)\\src\\MAIN INTERFACE 2.0.png"));
+            bgImage = ImageIO.read(new File("src\\images\\MAIN INTERFACE 2.0.png"));
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -80,7 +80,7 @@ public class MainInterface {
         JButton adminButton = createStyledButton("Admin", textColor, textColor, buttonFont);
         JButton aboutButton = createStyledButton("About Us", textColor, textColor, buttonFont);
 
-        ImageIcon exitIcon = new ImageIcon("C:\\Users\\OM\\OneDrive\\Desktop\\GYM 2.0(1)\\src\\exit logo.png");
+        ImageIcon exitIcon = new ImageIcon("src\\images\\exit logo.png");
         Image exitImage = exitIcon.getImage();  
         Image scaledExitImage = exitImage.getScaledInstance(40, 30, Image.SCALE_SMOOTH);  // Resize to match button size
         exitIcon = new ImageIcon(scaledExitImage);
@@ -143,7 +143,7 @@ public class MainInterface {
     
         public BackgroundPanel(String imagePath) {
             try {
-                backgroundImage = new ImageIcon(getClass().getResource("/ADMINLOGIN.png")).getImage();
+                backgroundImage = new ImageIcon("src/images/ADMINLOGIN.png").getImage();
             } catch (Exception e) {
                 e.printStackTrace();
             }
@@ -160,7 +160,7 @@ public class MainInterface {
         }
     }
     private JPanel createAdminLoginPanel() {
-        BackgroundPanel panel = new BackgroundPanel("C:\\Users\\OM\\OneDrive\\Desktop\\GYM 2.0(1)\\src\\ADMINLOGIN.png");
+        BackgroundPanel panel = new BackgroundPanel("src\\images\\ADMINLOGIN.png");
         panel.setLayout(new GridBagLayout());
         GridBagConstraints gbc = new GridBagConstraints();
         gbc.insets = new Insets(10, 10, 10, 10);  

@@ -67,7 +67,7 @@ public class MemberDashboard extends JPanel {
             this.username = username;
             this.executorService = Executors.newCachedThreadPool();
         
-            BackgroundPanel backgroundPanel = new BackgroundPanel("C:\\Users\\OM\\OneDrive\\Desktop\\GYM 2.0(1)\\src\\memberdashboard.jpg");
+            BackgroundPanel backgroundPanel = new BackgroundPanel("src\\images\\memberdashboard.jpg");
             backgroundPanel.setLayout(new BorderLayout());
             
             
